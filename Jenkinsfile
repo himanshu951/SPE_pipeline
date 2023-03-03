@@ -1,11 +1,9 @@
-
-
 pipeline { 
     agent any
     stages {
         stage('Clone Git') {
             steps {
-                git 'https://github.com/himanshu951/SPE_pipeline.git'
+                git 'https://github.com/BThangaraju/Jenkins.git'
             }
         }
         stage('Build Code') {
@@ -16,7 +14,7 @@ pipeline {
         }
      stage('Test Code') {
             steps {
-                sh "chmod u+x Test.py"
+                sh "chmod u+x Tes.py"
                 sh "./Test.py"
             }
         }
